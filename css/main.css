@@ -3,6 +3,12 @@ body{
     padding: 0;
     font-family: "Montserrat", sans-serif;
 }
+div,section{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
 .df{
     display: flex;
 }
@@ -189,6 +195,7 @@ header:before{
     position: absolute;
     bottom: 0;
     right: 0;
+    max-width: unset;
 }
 .banner-sub-bg{
     background: #211E1F;
@@ -253,7 +260,7 @@ header:before{
 .propusk-info-right{
     max-width: calc(100% - 558px);
     width: 100%;
-    height: 768px;
+    min-height: 768px;
     padding: 80px 50px 82px;
     border-radius: 20px;
     background: url('../img/info-right-mask.png') #211E1F;
@@ -312,24 +319,36 @@ header:before{
 .propusk-help .section-title{
     padding-left: 172px;
     padding-right: 172px;
-    margin-bottom: 80px;
+
 }
 .help-list{
     gap: 20px;
+    padding-bottom: 50px;
+    padding-top: 80px;
+    overflow: visible;
+}
+.help-list .swiper-wrapper{
+    gap: 20px;
+
 }
 .help-item{
     width: calc(100%/3);
     border-radius: 20px;
     background: #fff;
     box-shadow: 0px 0px 30px 0px #00000026;
+    flex-shrink: unset;
 
 }
+
 .help-item li{
     list-style: none;
 }
 .help-img{
     height: 290px;
     overflow: hidden;
+}
+.help-img img{
+    width: 100%;
 }
 .help-title{
     padding: 30px 30px 20px;
@@ -365,7 +384,7 @@ header:before{
     margin-bottom: 30px;
 }
 .counter{
-    margin-top: 150px;
+    margin-top: 100px;
     margin-bottom: 203px;
     max-width: 1007px;
     margin-left: auto;
@@ -390,7 +409,7 @@ header:before{
 
 .client-list{
     padding: 80px 60px 252px;
-
+    gap: 20px;
 }
 .client-item{
     max-width: 315px;
@@ -540,11 +559,15 @@ header:before{
     width: 100%;
     gap: 20px;
 }
+.price-list .swiper-wrapper{
+    gap: 20px;
+}
 .price-item{
     width: calc(100%/3);
     background: #fff;
     box-shadow: 0px 0px 30px 0px #00000026;
     border-radius: 20px;
+    flex-shrink: unset;
 }
 .price-title{
     padding-top: 30px;
@@ -557,6 +580,19 @@ header:before{
     margin-bottom: 30px;
     font-weight: 800;
 }
+.price-img img{
+    width: 100%;
+}
+.swiper-pagination-clickable .swiper-pagination-bullet{
+    background: #D2D2D2;
+    width: 12px;
+    height: 12px;
+}
+.swiper-pagination-clickable .swiper-pagination-bullet-active{
+    background: #D92020;
+
+}
+
 .price-item p{
     color: #D92020;
     font-size: 24px;
@@ -615,16 +651,22 @@ header:before{
     margin-top: 80px;
     margin-bottom: 257px;
 }
+.review-list .swiper-wrapper{
+    gap: 20px;
+}
 .review-item{
     max-width: calc(100%/3);
     padding: 30px;
     border-radius: 20px;
     background: url('../img/review-red.png');
-    background-size: 100%;
+    background-size: cover;
+    flex-shrink: unset;
+
 }
 .review-item:nth-child(2n){
     background: url('../img/review-black.png');
-    background-size: 100%;
+    background-size: cover;
+
 
 
 }
@@ -723,9 +765,10 @@ header:before{
     padding: 0 60px;
 }
 .news-item{
-    max-width: 315px;
+    max-width: calc(50%/2 - 20px);
     width: 100%;
-    height: 315px;
+    max-height: 315px;
+    height: 100%;
     float: left;
     overflow: hidden;
     margin-left: 20px;
@@ -736,9 +779,12 @@ header:before{
 }
 .news-item img{
     max-width: 100%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 .news-item:first-child{
-    max-width: 650px;
+    max-width:50%;
     max-height: 650px;
     height: 100%;
     width: 100%;
@@ -810,11 +856,18 @@ header:before{
     height: 100%;
     background: linear-gradient(225deg, rgba(33, 30, 31, 0) -55.7%, #211E1F 99.37%);
 }
+.news-img{
+    height: 100%;
+}
 .news-list{
     margin-top: 80px;
     margin-bottom: 150px;
     width: 100%;
     min-height: 650px;
+    overflow: visible;
+}
+.news-list .swiper-wrapper{
+    display: block;
 }
 .about .section-title{
     margin: 0 auto 80px;
@@ -826,6 +879,7 @@ header:before{
 .about{
     padding: 0 60px;
     gap: 51px;
+    width: 100%;
 }
 .about-left{
     max-width: 537px;
@@ -1387,6 +1441,7 @@ footer{
 }
 .about-counter{
     justify-content: space-between;
+    gap: 20px;
 }
 .about-counter-item{
     width: 315px;

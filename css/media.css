@@ -1,0 +1,295 @@
+@media screen and (max-width: 1300px){
+    .banner-right img{
+        width: 650px;
+    }
+    .contact-left{
+        max-width: 55%;
+    }
+    .full-time-right .btn-red{
+        margin-bottom: 100px
+    }
+    .full-time-consultation{
+        min-height: 590px;
+        height: auto;
+    }
+    .promotion-left h1{
+        font-size: 48px;
+        line-height: 52px;
+    }
+    .help-item .btn-red,.price-item .btn-red{
+        width: calc(100% - 60px);
+    }
+
+
+
+}
+@media screen and (max-width: 1200px){
+    .about-counter-item h1{
+        font-size: 48px;
+        line-height: 53px;
+    }
+}
+@media screen and (max-width: 1100px){
+    .banner-right img {
+        width: 550px;
+    }
+    .propusk-info-left{
+        max-width: 50%;
+    }
+    .propusk-info-right{
+        max-width: 50%;
+    }
+    .propusk-help .section-title,.about .section-title{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .about{
+        margin-top: 80px;
+        padding-top: 80px;
+    }
+    .about .section-title{
+        margin-bottom: 0;
+    }
+    .about-left{
+        max-width: 50%;
+    }
+    .propusk-info{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .counter, .features, .news, .promotion{
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    .client-list, .price-list, .faq{
+        padding-bottom: 80px;
+    }
+    .review-list, .contacts{
+        margin-bottom: 80px;
+    }
+    .news-list{
+        margin-bottom: 80px;
+        min-height: auto;
+    }
+    header:before{
+        background-size: cover;
+    }
+    .company-right{
+        padding-top: 80px;
+    }
+}
+@media screen and (max-width: 1024px){
+    .full-time-left{
+        max-width: 50%;
+    }
+    .promotion-left, .promotion-right{
+        max-width: 50%;
+    }
+    .about-left {
+        max-width: 30%;
+    }
+    .about-right{
+        max-width: 60%;
+    }
+}
+@media screen and (max-width: 990px){
+    .help-list{
+        overflow: hidden;
+    }
+    .help-item, .price-item, .review-item{
+
+        flex-shrink: 0;
+    }
+    .review-item{
+        max-width: unset;
+    }
+
+    .propusk-help .section-title, .about .section-title{
+        padding: 0;
+    }
+    .counter{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .banner-right{
+        display: none;
+    }
+    .propusk-info{
+        flex-direction: column;
+    }
+    .propusk-info-left,  .propusk-info-right{
+        max-width: 100%;
+    }
+    .propusk-info-left{
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top-right-radius: 10px;
+    }
+    .propusk-info-right h2{
+        font-size: 32px;
+        line-height: 38px;
+        margin-bottom: 30px;
+    }
+    .propusk-info-right{
+        min-height: unset;
+    }
+    .section-title{
+        font-size: 32px;
+        line-height: 36px;
+    }
+    .help-list{
+        padding-top: 50px;
+    }
+    .client-list{
+        padding-top: 30px;
+    }
+    .client-item{
+        max-width: 45%;
+    }
+    .free-consultation{
+        flex-direction: column;
+    }
+    .clients{
+        margin-bottom: 300px;
+        padding-bottom: 300px;
+    }
+    .consultation-left,  .consultation-right{
+        width: 100%;
+    }
+    .consultation-left img{
+        transform: translateX(-40%);
+    }
+    .consultation-right{
+        padding-top: 22px;
+        padding-bottom: 22px;
+    }
+    .consultation-right form{
+        flex-direction: column;
+    }
+    .consultation-right input{
+        width: 100%;
+    }
+    .consultation-right form .btn-red{
+        width: 100%;
+        max-width: 100%;
+    }
+    .features-right{
+        display: none;
+    }
+    .features .section-title{
+        margin-bottom: 0;
+    }
+    .features-left{
+        padding-top: 30px;
+        width: 100%;
+    }
+    .features-content{
+        width: 100%;
+    }
+    .feature-item{
+        max-width: 100%;
+    }
+    .price .section-title{
+        margin-top: 0;
+    }
+    .faq .section-title{
+        margin-top: 80px;
+
+    }
+    .faq-list{
+        margin-top: 50px;
+    }
+    .accordion{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .review-list{
+        margin-top: 50px;
+    }
+    .full-time-consultation{
+        flex-direction: column;
+        min-height: unset;
+    }
+    .review{
+        padding-bottom: 400px;
+    }
+    .full-time-left, .full-time-right{
+        max-width: 100%;
+    }
+    .full-time-right{
+        margin-top: 0;
+    }
+    .full-time-left img{
+        max-width: 50%;
+    }
+    .full-time-right .btn-red{
+        margin-bottom: 25px;
+    }
+    .news-item:first-child{
+        float: none;
+    }
+    .news-item{
+        float: none;
+    }
+    .news-list .swiper-wrapper{
+        display: flex;
+    }
+    .news-list{
+        overflow: hidden;
+    }
+    .news-list .swiper-wrapper{
+        gap: 20px;
+    }
+    .news-item:first-child{
+        max-width: unset;
+        max-height: unset;
+    }
+    .news-item{
+        max-width: unset;
+        max-height: unset;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    .footer-phone{
+        font-size: 34px;
+        line-height: 40px;
+        margin-bottom: 5px;
+    }
+    .footer-email{
+        font-size: 20px;
+        line-height: 23px;
+    }
+}
+@media screen and (max-width: 768px){
+    .full-time-right h2{
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 10px;
+    }
+    .full-time-right p{
+        font-size: 14px;
+        line-height: 19px;
+        margin-bottom: 20px;
+    }
+    .banner-title{
+        font-size: 32px;
+        line-height: 36px;
+        margin-bottom: 10px;
+    }
+    .banner-sub-title{
+        font-size: 22px;
+        line-height: 26px;
+        margin-bottom: 30px;
+    }
+    .banner-text{
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 600px){
+
+}
+@media screen and (max-width: 480px){
+
+}
