@@ -20,6 +20,13 @@
         width: calc(100% - 60px);
     }
 
+    .news-page .news-more .news-item, .news-page .news-more .news-item:first-child{
+        max-width: calc(100%/3 - 20px);
+        min-height: unset;
+        height: auto;
+        max-height: unset;
+        margin-bottom: 0;
+    }
 
 
 }
@@ -28,6 +35,27 @@
         font-size: 48px;
         line-height: 53px;
     }
+    .connection-left, .reg-rins .promotion-left, .about-us-left, .connection-right, .reg-rins .promotion-right,
+    .about-us-right{
+        max-width: 50%;
+    }
+    .connection-right{
+        padding-bottom: 80px;
+    }
+    .propusk-registration-help{
+        margin-bottom: 0;
+    }
+    .propusk-position .section-title{
+        margin-bottom: 50px;
+    }
+    .clients-home  .client-list{
+        padding-bottom: 0;
+    }
+    .news-page .news-item{
+        max-width: calc(100%/2 - 10px);
+        margin-left: 0;
+    }
+
 }
 @media screen and (max-width: 1100px){
     .banner-right img {
@@ -77,8 +105,43 @@
     .company-right{
         padding-top: 80px;
     }
+    .company-left{
+        max-width: 40%;
+    }
+    .registration-right .section-title{
+        font-size: 48px;
+        line-height: 52px;
+    }
+    .reg-help-item .btn-red{
+        width: calc(100% - 40px);
+        margin: 0 auto 30px;
+    }
+    .connection{
+        margin-top: 160px;
+    }
+    .news-inner .news-item:first-child{
+        float: none;
+    }
+    .clients-about .client-list{
+        padding-bottom: 0;
+    }
+    .review-page .btn-red{
+        margin-bottom: 80px;
+    }
+    .review-page .review-item {
+        max-width: calc(100% / 2 - 20px);
+    }
 }
 @media screen and (max-width: 1024px){
+    .position-item:first-child{
+        width: 45%;
+    }
+    .position-item{
+        width: 45%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 20px;
+    }
     .full-time-left{
         max-width: 50%;
     }
@@ -91,8 +154,105 @@
     .about-right{
         max-width: 60%;
     }
+    .about-counter{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .connection-right h2{
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .documents .section-title{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .help-img img{
+        height: 100%;
+        object-fit: cover;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    .help-item li{
+        padding-right: 20px;
+    }
 }
 @media screen and (max-width: 990px){
+    .review-page .review-item{
+        max-width: 100%;
+        margin: 0;
+        width: 100%;
+    }
+    .review-page .review-list{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .review-page{
+        margin-top: 80px;
+    }
+
+    .news.news-inner{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .news-inner .news-item:first-child{
+        margin-top: 0;
+    }
+    .news-inner .news-list{
+        padding-bottom: 0;
+        margin-bottom: 50px;
+    }
+    .news-inner > h2{
+        margin-top: 0;
+        font-size: 32px;
+        line-height: 36px;
+        margin-bottom: 20px;
+    }
+    .propusk-position{
+        padding-top: 0;
+    }
+    .position-list{
+        display: flex;
+        flex-wrap: wrap;
+        min-height: unset;
+        width: 100%;
+        gap: 20px;
+    }
+    .position-item{
+        float: none;
+        margin-right: 0;
+        margin-bottom: 0;
+        width: 100%;
+       height: auto;
+    }
+    .position-item:first-child{
+        float: none;
+        height: auto;
+        width: 100%;
+        max-width: 100%;
+    }
+    .position-item img{
+        width: 189px;
+    }
+    .review-home .review-list{
+        padding-bottom: 42px;
+    }
+    .position-item:first-child h2{
+        font-size: 28px;
+        line-height: 33px;
+    }
+    .about{
+        padding-top: 0;
+    }
+    body{
+        background: #FAFAFA;
+    }
+    .promotion-left h1 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
     .help-list{
         overflow: hidden;
     }
@@ -100,8 +260,93 @@
 
         flex-shrink: 0;
     }
+    .help-item{
+        margin-left: 10px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .reg-help-item{
+        margin-left: 10px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .reg-help-list{
+        padding: 0 0 42px;
+    }
+    .registration-left{
+        max-width: 40%;
+    }
+    .registration-right{
+        max-width: 60%;
+    }
+    .promotion{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .news-more .news-item:last-child{
+        display: none;
+    }
+    .news-page .news-more .news-item, .news-page .news-more .news-item:first-child{
+        max-width: calc(100%/2 - 20px);
+    }
+    .reg-rins .promotion-left{
+        max-width: 40%;
+    }
+    .reg-rins .promotion-right{
+        max-width: 60%;
+    }
+    .registration-right{
+        padding-left: 40px;
+    }
+    .price-item{
+        margin-left: 10px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
     .review-item{
-        max-width: unset;
+        margin-left: 10px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .news-item{
+        margin-left: 10px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .news{
+        padding: 0;
+    }
+    .news-list{
+        padding-bottom: 60px;
+    }
+    .price-list{
+        padding: 0;
+    }
+    .review-list{
+        padding: 0;
+    }
+    .propusk-help{
+        padding: 0;
+    }
+    .slick-dots{
+        bottom: 0;
+    }
+    .slick-dots li button{
+        width: 12px;
+        height: 12px;
+        background: #D2D2D2;
+        border-radius: 100%;
+    }
+    .slick-dots .slick-active button{
+        background: #D92020;
+    }
+    .slick-dots li button:before{
+        display: none;
     }
 
     .propusk-help .section-title, .about .section-title{
@@ -149,10 +394,7 @@
     .free-consultation{
         flex-direction: column;
     }
-    .clients{
-        margin-bottom: 300px;
-        padding-bottom: 300px;
-    }
+
     .consultation-left,  .consultation-right{
         width: 100%;
     }
@@ -209,7 +451,61 @@
     .full-time-consultation{
         flex-direction: column;
         min-height: unset;
+        background: none;
+        padding: 0;
+        gap: 0;
+        margin-top: 50px;
     }
+    .news-page .news-list{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .news-page .news-item{
+        margin-right: 0;
+        margin-top: 0;
+    }
+    .news-page{
+        margin-top: 80px;
+    }
+    .free-consultation{
+        flex-direction: column;
+        min-height: unset;
+        background: none;
+        padding: 0;
+        gap: 0;
+        margin-top: 50px;
+    }
+    .full-time-right{
+        background: url("../img/full-bg.png");
+        padding: 25px 60px 0 29px;
+    }
+    .consultation-right{
+        background: url("../img/free-bg.png");
+        padding: 22px 15px 22px 15px;
+    }
+    .full-time-left{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .consultation-left img{
+        position: relative;
+        left: auto;
+        bottom: auto;
+        transform: none;
+    }
+    .consultation-left{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .full-time-left img{
+        position: relative;
+        left: auto;
+        bottom: auto;
+        transform: none;
+    }
+
     .review{
         padding-bottom: 400px;
     }
@@ -225,12 +521,7 @@
     .full-time-right .btn-red{
         margin-bottom: 25px;
     }
-    .news-item:first-child{
-        float: none;
-    }
-    .news-item{
-        float: none;
-    }
+
     .news-list .swiper-wrapper{
         display: flex;
     }
@@ -259,8 +550,54 @@
         font-size: 20px;
         line-height: 23px;
     }
+    .review-home{
+        padding-bottom: 60px;
+    }
+    .review-home .review-list{
+        margin-bottom: 0;
+    }
+    .about-counter{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .review{
+        padding: 0;
+    }
+
+    .clients-about{
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .discount-right{
+        max-width: 40%;
+        background-size: cover;
+    }
+    .discount-left{
+        max-width: 60%;
+    }
 }
 @media screen and (max-width: 768px){
+    .help-item{
+        width: 345px;
+    }
+.discount{
+    flex-direction: column-reverse;
+}
+    .discount-right img{
+        position: relative;
+        max-width: 375px;
+        margin: 0 auto;
+        right: auto;
+        left: auto;
+        bottom: auto;
+
+}
+     .discount-right {
+         max-width: 100%;
+         display: flex;
+         align-items: flex-end;
+         justify-content: center;
+     }
     .full-time-right h2{
         font-size: 24px;
         line-height: 28px;
@@ -271,6 +608,27 @@
         line-height: 19px;
         margin-bottom: 20px;
     }
+    .discount-left{
+        max-width: 100%;
+        padding-bottom: 30px;
+
+    }
+    .footer-phone{
+        text-align: left;
+    }
+    .footer-email{
+        text-align: left;
+    }
+    .documents-right{
+        display: none;
+    }
+    .discount-left h1{
+        margin-top: 30px;
+    }
+    .footer-right{
+        text-align: left;
+    }
+
     .banner-title{
         font-size: 32px;
         line-height: 36px;
@@ -286,10 +644,713 @@
         line-height: 27px;
         margin-bottom: 50px;
     }
+    .company{
+        flex-direction: column;
+    }
+    .company-left {
+        max-width: 100%;
+    }
+    .company-left img{
+        width: 60%;
+    }
+    .company-right{
+        padding-top: 0;
+        padding-bottom: 60px;
+    }
+    .about-counter-item h1 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+    .about-counter-item{
+        padding: 20px;
+    }
+    .about-counter-item p{
+        font-size: 14px;
+    }
+    .about-us{
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-bottom: 80px;
+    }
+    .clients-about .client-list{
+        padding-bottom: 80px;
+    }
+    .contact-right{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .contact-right .btn-red{
+        width: 100%;
+    }
+    .our-command{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .promotion-left h1 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .promotion{
+        gap: 20px;
+    }
+    .header-phone{
+        display: none;
+    }
+    .header-call-request{
+        display: none;
+    }
+    .header-working-time{
+        display: none;
+    }
+    .registration{
+        flex-direction: column;
+    }
+    .registration-left,.registration-right{
+        max-width: 100%;
+    }
+    .registration-left img{
+        max-width: 375px;
+        margin: 0 auto;
+    }
+    .connection{
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .connection-content{
+        flex-direction: column;
+        background: transparent;
+        box-shadow: none;
+        margin-top: 50px;
+    }
+    .connection-left{
+        max-width: 100%;
+    }
+    .propusk-registration-help{
+        padding-top: 80px;
+    }
+    .connection-right{
+        max-width: 100%;
+        background: url("../img/connection-bg.png");
+        background-size: cover;
+        box-shadow: 0px 0px 30px 0px #00000026;
+        border-radius: 20px;
+        padding: 30px 20px;
+    }
+    .reg-help-list{
+        margin-top: 50px;
+    }
+    .reg-rins.promotion{
+        flex-direction: column;
+        background: transparent;
+        padding: 0;
+        gap: 0;
+        margin-top: 0;
+    }
+    .reg-help-img img{
+        width: 100%;
+    }
+    .reg-help-item{
+        width: 345px;
+    }
+    .propusk-registration-help{
+        padding-bottom: 50px;
+    }
+    .reg-rins  .promotion-left{
+         max-width: 100%;
+        display: flex;
+        align-items: flex-end;
+    }
+     .reg-rins .promotion-right{
+         background: url(../img/reg-rins-bg.png);
+         max-width: 100%;
+         padding: 30px 15px;
+     }
+    .news-page .news-title{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .news-page .news-item:first-child .news-title{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .news-page .news-item{
+        min-height: auto;
+    }
+    .reg-rins  .promotion-left img{
+        position: relative;
+        bottom: auto;
+        margin: 0 auto;
+    }
+    .about-us-content{
+        flex-direction: column;
+        box-shadow: none;
+        background: transparent;
+    }
+    .about-us-left{
+        max-width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .about-us-right{
+        max-width: 100%;
+        box-shadow: 0px 0px 30px 0px #00000026;
+        border-radius: 20px;
+        background: #fff;
+        padding: 30px 25px;
+    }
+    .about-left{
+        max-width: 100%;
+    }
+    .about-right{
+        max-width: 100%;
+    }
+    .review-item{
+        width: 345px;
+
+    }
+
+    .clients-home{
+        margin-bottom: 0;
+    }
+
+    .news-item{
+        width: 345px;
+    }
+    .promotion-img{
+        display: flex;
+        align-items: flex-end;
+    }
+    .free-consultation{
+        margin-top: 0;
+    }
+    .consultation-left img{
+        height: 300px;
+    }
+    .promotion-img{
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        margin-top: 80px;
+    }
+    .promotion-about{
+        margin-top: 0;
+    }
+    .promotion-img img{
+        height: 300px;
+    }
 }
 @media screen and (max-width: 600px){
+    .company-right{
+        padding-bottom: 0;
+    }
+    .company-left{
+        margin-bottom: 30px;
+    }
+    .news-page .news-item{
+        max-width: 100%;
+        height: 345px;
+    }
+    .news-page .news-info{
+        padding: 25px;
+    }
+    .news-page .news-list{
+        padding-bottom: 0;
+    }
 
+    .news-page .news-title{
+        -webkit-line-clamp: 5;
+    }
+    .discount-left h1{
+        font-size: 32px;
+        line-height: 36px;
+        margin-bottom: 10px;
+    }
+    .discount-left p{
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 20px;
+    }
+    .discount-price{
+        flex-direction: column;
+    }
+    .discount-price-left{
+        margin-bottom: 20px;
+    }
+    .discount-price-right div{
+        margin-left: 0;
+    }
+    .discount-price{
+        margin-bottom: 30px;
+    }
+    .propusk-position{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .discount-left{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .position-item h2{
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 10px;
+    }
+    .position-item p{
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .position-item{
+        padding: 30px 25px;
+    }
+    .documents-left{
+        margin-left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .document{
+        width: calc(100%/2 - 20px);
+        height: auto;
+        padding: 20px 15px;
+    }
+    .documents{
+        padding-top: 80px;
+    }
+    .fw{
+        margin-bottom: 50px;
+    }
+
+    .review-title{
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 10px;
+    }
+    .review-text{
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .features-left .feature-info{
+        max-width: calc(100% - 125px);
+    }
+    .features-left .icon{
+        padding: 10px;
+    }
+    .about-us-right h2{
+        font-size: 32px;
+        line-height: 38px;
+        margin-bottom: 10px;
+    }
+    .about-us-right p{
+        font-size: 14px;
+        line-height: 21px;
+
+    }
+    .connection{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .registration-right{
+        padding-top: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 30px;
+    }
+    .section-title:not(.counter-item .section-title){
+        font-size: 32px;
+        line-height: 36px;
+    }
+    .features-left .icon{
+        width: 99px;
+    }
+    .connection-right h2, .reg-rins .promotion-right h1{
+        font-size: 28px;
+        line-height: 33px;
+        margin-bottom: 10px;
+    }
+    .connection-right p{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .about-us-left{
+        margin-top: 0;
+    }
+    .reg-help-item h2{
+        font-size: 24px;
+        line-height: 28px;
+        padding-left: 25px;
+        margin-bottom: 10px;
+    }
+    .counter-item h1{
+        font-size: 64px;
+        line-height: 72px;
+    }
+
+    .reg-help-item p{
+        font-size: 14px;
+        line-height: 16px;
+        padding-left: 25px;
+        margin-bottom: 10px;
+    }
+    .registration-right p{
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 20px;
+    }
+    .registration-right .section-title{
+        font-size: 32px;
+        line-height: 36px;
+        margin-bottom: 10px;
+    }
+    .registration-right form input{
+        height: 49px;
+    }
+
+    body{
+        background: #FAFAFA ;
+    }
+    .company-right, .about-us,.features, .client-list{
+        padding-left: 15px;
+        padding-right: 15px;
+
+    }
+    .company-left{
+        background: url('../img/company-bg.png');
+    }
+    .company-right p{
+    font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 20px;
+        padding-bottom: 0;
+    }
+    .company{
+        background: #FAFAFA;
+    }
+    .about-counter-item{
+        max-width: calc(100%/2 - 20px);
+        background: url('../img/counter-bg.png');
+        background-size: cover;
+        padding: 14px;
+
+    }
+    .about-counter-item h1 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+    .about-counter-item p{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .feature-info h4{
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 10px;
+    }
+    .feature-info p{
+        font-size: 14px;
+        line-height: 16px;
+        word-break: break-word;
+    }
+    .feature-item{
+        padding: 25px;
+    }
+
+    .promotion{
+        flex-direction: column;
+        padding: 20px 15px;
+    }
+    .promotion-left, .promotion-right{
+        max-width: 100%;
+    }
+    .promotion-right input{
+        height: 49px;
+        padding: 15px 30px;
+        font-size: 16px;
+    }
+    .contacts{
+        flex-direction: column-reverse;
+    }
+    .contact-right{
+        padding-top: 0;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .contact-left{
+        max-width: 100%;
+        margin-top: 50px;
+        height: 424px;
+    }
+    .contact-left iframe{
+        height: 424px!important;
+    }
+    .contact-right .section-title{
+        margin-bottom: 30px;
+    }
+    .footer-menu{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    footer{
+        padding: 30px 15px;
+    }
+    .footer-right{
+        text-align: left;
+    }
+    .footer-fw{
+        font-size: 10px;
+        line-height: 12px;
+    }
+    nav{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .company-left img{
+        width: 100%;
+    }
+    .about-counter-item{
+        height: auto;
+    }
+
+    .banner{
+        padding-top: 32px;
+    }
+    .banner-sub-title{
+        margin-bottom: 0;
+        width: fit-content;
+    }
+    .banner-sub-bg{
+        width: fit-content;
+    }
+
+    .btn-bg{
+        width: 100%;
+    }
+    .banner, .propusk-info{
+        padding-left: 15px;
+        padding-right: 15px;
+
+    }
+    .banner-left{
+        padding-bottom: 30px;
+    }
+    .propusk-info-left{
+        height: 352px;
+    }
+    .propusk-info-left img{
+        width: 308px;
+    }
+    .propusk-info{
+        padding-top: 150px;
+    }
+    .propusk-info-right{
+        padding: 35px 25px 50px;
+    }
+    .propusk-info-right li{
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    .propusk-info-right li p{
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .propusk-info-right .btn{
+        margin-top: 40px;
+    }
+    .propusk-help{
+        padding: 0;
+    }
+    .consultation-right h2{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .price-item p{
+        padding-left: 25px;
+    }
+    .price-title{
+        padding-left: 25px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .price-item{
+        width: 345px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .help-item{
+        width: 345px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .help-img img{
+        width: 345px;
+    }
+    .help-title{
+        padding-left: 25px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .help-item li{
+        padding-left: 25px;
+    }
+    .counter{
+        padding-left: 15px;
+        padding-right: 15px;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .counter-item{
+        width: 100%;
+       text-align: center;
+
+    }
+    .counter-item p{
+        max-width: 100%;
+    }
+    .faq{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .accordion span:not(.accordion-btn){
+        font-size: 52px;
+        line-height: 59px;
+        width: 100%;
+    }
+    .accordion{
+        flex-wrap: wrap;
+        gap: 10px  ;
+        position: relative;
+        background: transparent;
+        padding-top: 20px;
+        font-size: 16px;
+        line-height: 18px;
+
+    }
+    .accordion .accordion-btn{
+        position: absolute;
+        right: 15px;
+        top: 20px;
+        width: 19px;
+        margin-right: 0;
+    }
+    .panel{
+        background: transparent;
+        padding: 0;
+    }
+    .panel p{
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .about{
+        padding-left: 15px;
+        padding-right: 15px;
+        gap: 20px;
+    }
+    .about-left{
+        max-width: 100%;
+        height: 346px;
+        overflow: hidden;
+        text-align: center;
+    }
+    .about-left img{
+        width: 295px;
+        margin: 0 auto;
+    }
+    .about-right{
+        max-width: 100%;
+        padding-top: 0;
+    }
+    .about-right p{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .contact-right{
+        max-width: 100%;
+    }
+    .contact-phone{
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 15px;
+    }
+    .contact-address{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .help-title{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .help-item li{
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .document h4{
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: 13px;
+    }
+    .news-inner > h2{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .news-inner > p{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .news-inner .news-item:first-child .news-title{
+        font-size: 24px;
+        line-height: 28px;
+        -webkit-line-clamp: 5;
+    }
+    .news-inner .news-item:first-child{
+        height: 445px;
+    }
+    .news-page .news-more .news-item, .news-page .news-more .news-item:first-child{
+        max-width: 100%;
+    }
+    .news-page .news-more .news-item:nth-child(2){
+        display: none;
+    }
+    .promotion-right .btn-red{
+        font-size: 16px;
+        line-height: 19px;
+        padding-left: 17px;
+        padding-right: 17px;
+        height: 59px;
+    }
+    .promotion-right label{
+        font-size: 10px;
+        line-height: 13px;
+    }
 }
 @media screen and (max-width: 480px){
-
+    .discount .btn-red{
+        width: 100%;
+    }
+    .full-time-right .btn-red{
+        width: 100%;
+    }
+    .document img{
+        max-width: 74px;
+    }
+    .client-list{
+        gap: 8px;
+    }
+    .client-item{
+        max-width: 168px;
+        height: 107px;
+    }
+    .client-item img{
+        width: 78px
+    }
+    .propusk-help .section-title{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    header:before{
+        background: url('../img/header-bg-mob.png') no-repeat;
+        background-size: cover;
+    }
 }

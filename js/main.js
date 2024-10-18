@@ -12,49 +12,104 @@ for (i = 0; i < acc.length; i++) {
         }
     });
 }
+ $(function (){
+     console.log($('div').is('news-page'))
 
-var init = false;
-var swiper1;
-function swiperCard(item) {
+    if($(window).width() <= 990){
 
-    if (window.innerWidth <= 990) {
-        console.log(init)
-
-        if (!init) {
-            console.log(item)
-            init = true;
-            swiper1 = new Swiper(item, {
-                slidesPerView: 2,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-                breakpoints: {
-
-                    480: {
-                        slidesPerView: 1,
-
-                    },
-                    600: {
-                        slidesPerView: 2,
-
-                    },
-
-                },
+        $('.price-list').slick({
+            centerMode: true,
+            slidesToShow: 2,
+            arrows: false,
+            dots: true,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        slidesToShow: 1,
+                        variableWidth: true
+                    }
+                }
+            ]
+        });
+        if(!$('section').hasClass('review-page')){
+            $('.review-list').slick({
+                centerMode: true,
+                slidesToShow: 2,
+                arrows: false,
+                dots: true,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            slidesToShow: 1,
+                            variableWidth: true
+                        }
+                    }
+                ]
             });
-            init = false;
         }
-    } else if (init) {
-        swiper.destroy();
-        init = false;
-    }
-}
-swiperCard('.help-list');
-swiperCard('.price-list');
-swiperCard('.review-list');
-swiperCard('.news-list');
-window.addEventListener("resize", swiperCard('.help-list'));
-window.addEventListener("resize", swiperCard('.price-list'));
-window.addEventListener("resize", swiperCard('.review-list'));
 
-window.addEventListener("resize", swiperCard('.news-list'));
+
+        $('.reg-help-list').slick({
+            centerMode: true,
+            slidesToShow: 2,
+            arrows: false,
+            dots: true,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        slidesToShow: 1,
+                        variableWidth: true
+                    }
+                }
+            ]
+        });
+        $('.help-list').slick({
+            centerMode: true,
+            slidesToShow: 2,
+            arrows: false,
+            dots: true,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        slidesToShow: 1,
+                        variableWidth: true
+                    }
+                }
+            ]
+        });
+        if($('section').hasClass('news-page')){
+            console.log('aaaa')
+
+        } else{
+            $('.news-list').slick({
+                centerMode: true,
+                slidesToShow: 2,
+                arrows: false,
+                dots: true,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            slidesToShow: 1,
+                        }
+                    }
+                ]
+            });
+        }
+
+    }
+ })

@@ -979,6 +979,7 @@ header:before{
     width: 100%;
     margin-top: 25px;
     font-size: 18px;
+    background: #D92020;
 }
 .promotion-right label{
     font-size: 16px;
@@ -1738,10 +1739,15 @@ footer{
     background: url('../img/reg-left-bg.png') no-repeat;
     display: flex;
     align-items: flex-end;
-    background-position: 0 -105px;
+    background-position: 0;
+    background-size: cover;
+}
+form{
+    box-sizing: border-box;
 }
 .review-page .review-item{
-    max-width: 426px;
+    max-width: calc(100%/3 - 20px);
+
 }
 .review-page .btn-red{
     margin: 70px auto 150px;
@@ -1859,4 +1865,8 @@ input[type="radio"]:checked::before {
     transform: translateY(-50%);
 
 
+}
+
+.review-page{
+    padding-top: 150px;
 }
